@@ -1,0 +1,56 @@
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <title>Phone Dialer</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+   <!-- pas screen -->
+    <section id="pad">
+        <p id="phone">
+        <input id="phoneNum" type="text" />
+       </p>
+       <!-- Dial pad -->
+       <div class="num">
+    <div>
+        <input class="no" id="Number1" type="button" value="1" onclick="addNumber1()" />
+    </div>
+    <div class="hov">
+        <input class="no" id="Number2" type="button" value="2" onclick="addNumber2()" />
+        <p>ABC</p>
+    </div>
+    <div>
+        <input class="no" id="Number3" type="button" value="3" onclick="addNumber3()" />
+        <p>DEF</p>
+    </div>
+       </div>
+    
+    <div class="num">
+        <div><input class="no" id="Number4" type="button" value="4" onclick="addNumber4()" /><p>GHI</p></div>
+        <div><input class="no" id="Number5" type="button" value="5" onclick="addNumber5()" /><p>JKL</p></div>
+       <div> <input class="no" id="Number6" type="button" value="6" onclick="addNumber6()" /><p>MNO</p></div>
+    </div>
+    <div class="num">
+        <div><input class="no" id="Number7" type="button" value="7" onclick="addNumber7()" /><p>PQRS</p></div>
+        <div><input class="no" id="Number8" type="button" value="8" onclick="addNumber8()" /><p>TUV</p></div>
+        <div><input class="no" id="Number9" type="button" value="9" onclick="addNumber9()" /><p>WXYZ</p></div>
+    </div>
+    <div class="num">
+        <div><input class="no" id="Star" type="button" value="*" onclick="addStar()" /></div>
+        <div><input class="no" id="Number0" type="button" value="0" onclick="addNumber0()" /></div>
+        <div><input class="no" id="Hashtag" type="button" value="#" onclick="addHash()" /></div>
+    </div>
+    <div class="num">
+        <div class="num no"><i style="font-size: 16px;" class="far fa-star"></i></div>
+        <div class="num no" onclick="verifyNumbers()"><i style="padding: 3px 20px;	background-color: #25D366; color: white; font-size: 16px;" class="fa fa-phone" aria-hidden="true"></i></div>
+     <div class="num no" onclick="clearAll()"><i style="font-size: 16px;" class="fas fa-arrow-left"></i></div>
+       
+    </div>
+    </section>
+
+
+    <script src="main.js">
+    </script>
+
+</body>
+</html>
